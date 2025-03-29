@@ -1,0 +1,22 @@
+{
+	"useTabs": true,
+	"tabWidth": 4,
+	"trailingComma": "none",
+	"printWidth": 125,
+	"plugins": ["prettier-plugin-packagejson"],
+	"tailwindFunctions": ["tv"],
+	"overrides": [
+		{
+			"files": [".prettierrc"],
+			"options": {
+				"parser": "json"
+			}
+		},
+		{
+			"files": ["package.json"],
+			"options": {
+				"printWidth": 1000
+			}
+		}
+	]
+}
