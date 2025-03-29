@@ -2,7 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { client, urlFor } from "@/sanity/lib/client";
+import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
+
 import { simpleBlogCard } from "@/sanity/lib/interface";
 
 async function getData() {

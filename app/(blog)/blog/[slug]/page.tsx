@@ -1,4 +1,6 @@
-import { client, urlFor, formatDate } from "@/sanity/lib/client";
+import { client } from "@/sanity/lib/client";
+import { formatDate } from "@/sanity/lib/date";
+import { urlFor } from "@/sanity/lib/image";
 import { fullBlog } from "@/sanity/lib/interface";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
