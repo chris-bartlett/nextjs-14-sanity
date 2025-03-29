@@ -5,7 +5,7 @@ import { fullBlog } from "@/sanity/lib/interface";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 
-export const revalidate = 300; // revalidate at most 30 seconds
+export const revalidate = 300; // revalidate at most 300 seconds
 
 async function getData(slug: string) {
     const query = `*[_type == 'blog' && slug.current == '${slug}'] {

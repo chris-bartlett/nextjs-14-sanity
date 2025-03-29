@@ -7,6 +7,9 @@ import { urlFor } from "@/sanity/lib/image";
 
 import { simpleBlogCard } from "@/sanity/lib/interface";
 
+export const revalidate = 300; // revalidate at most 300 seconds
+
+
 async function getData() {
   const query = `*[_type == 'blog'] | order(publishedAt desc) {
     title,
